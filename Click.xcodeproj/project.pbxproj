@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D8E7ED859B7AF39BCED965C /* Pods_Click.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818C74AAED80450CAACF3877 /* Pods_Click.framework */; };
 		EA99309724D56A1800E84859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309624D56A1800E84859 /* AppDelegate.swift */; };
-		EA99309924D56A1800E84859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309824D56A1800E84859 /* SceneDelegate.swift */; };
-		EA99309B24D56A1800E84859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309A24D56A1800E84859 /* ViewController.swift */; };
-		EA99309E24D56A1800E84859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99309C24D56A1800E84859 /* Main.storyboard */; };
+		EA99309B24D56A1800E84859 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309A24D56A1800E84859 /* MainScreenController.swift */; };
 		EA9930A024D56A1900E84859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99309F24D56A1900E84859 /* Assets.xcassets */; };
 		EA9930A324D56A1900E84859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9930A124D56A1900E84859 /* LaunchScreen.storyboard */; };
+		EA9930AB24D56E7700E84859 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9930AA24D56E7700E84859 /* MainScreenView.swift */; };
+		EA9930B624D5794C00E84859 /* CoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9930B524D5794C00E84859 /* CoinButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EE0B520AC9A48A1519F6DA6 /* Pods-Click.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Click.release.xcconfig"; path = "Target Support Files/Pods-Click/Pods-Click.release.xcconfig"; sourceTree = "<group>"; };
+		818C74AAED80450CAACF3877 /* Pods_Click.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Click.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20604A91229922D22F4D2E0 /* Pods-Click.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Click.debug.xcconfig"; path = "Target Support Files/Pods-Click/Pods-Click.debug.xcconfig"; sourceTree = "<group>"; };
 		EA99309324D56A1800E84859 /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA99309624D56A1800E84859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA99309824D56A1800E84859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA99309A24D56A1800E84859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA99309D24D56A1800E84859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA99309A24D56A1800E84859 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 		EA99309F24D56A1900E84859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9930A224D56A1900E84859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9930A424D56A1900E84859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9930AA24D56E7700E84859 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		EA9930B524D5794C00E84859 /* CoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8E7ED859B7AF39BCED965C /* Pods_Click.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1087A46B66A59B795780724C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				818C74AAED80450CAACF3877 /* Pods_Click.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6798E59B187A3FB0C438757C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C20604A91229922D22F4D2E0 /* Pods-Click.debug.xcconfig */,
+				5EE0B520AC9A48A1519F6DA6 /* Pods-Click.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA99308A24D56A1800E84859 = {
 			isa = PBXGroup;
 			children = (
 				EA99309524D56A1800E84859 /* Click */,
 				EA99309424D56A1800E84859 /* Products */,
+				6798E59B187A3FB0C438757C /* Pods */,
+				1087A46B66A59B795780724C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,55 @@
 		EA99309524D56A1800E84859 /* Click */ = {
 			isa = PBXGroup;
 			children = (
+				EA9930B024D5729600E84859 /* Common */,
+				EA9930AC24D570D300E84859 /* MainFiles */,
+				EA9930AD24D5717A00E84859 /* ViewControllers */,
+				EA9930AF24D5724000E84859 /* Resources */,
+			);
+			path = Click;
+			sourceTree = "<group>";
+		};
+		EA9930AC24D570D300E84859 /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
 				EA99309624D56A1800E84859 /* AppDelegate.swift */,
-				EA99309824D56A1800E84859 /* SceneDelegate.swift */,
-				EA99309A24D56A1800E84859 /* ViewController.swift */,
-				EA99309C24D56A1800E84859 /* Main.storyboard */,
-				EA99309F24D56A1900E84859 /* Assets.xcassets */,
 				EA9930A124D56A1900E84859 /* LaunchScreen.storyboard */,
 				EA9930A424D56A1900E84859 /* Info.plist */,
 			);
-			path = Click;
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		EA9930AD24D5717A00E84859 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA9930AE24D5721000E84859 /* MainScreenController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA9930AE24D5721000E84859 /* MainScreenController */ = {
+			isa = PBXGroup;
+			children = (
+				EA99309A24D56A1800E84859 /* MainScreenController.swift */,
+				EA9930AA24D56E7700E84859 /* MainScreenView.swift */,
+			);
+			path = MainScreenController;
+			sourceTree = "<group>";
+		};
+		EA9930AF24D5724000E84859 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA99309F24D56A1900E84859 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA9930B024D5729600E84859 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA9930B524D5794C00E84859 /* CoinButton.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA9930A724D56A1900E84859 /* Build configuration list for PBXNativeTarget "Click" */;
 			buildPhases = (
+				37C527B9D95B5C8C9EDD26BE /* [CP] Check Pods Manifest.lock */,
 				EA99308F24D56A1800E84859 /* Sources */,
 				EA99309024D56A1800E84859 /* Frameworks */,
 				EA99309124D56A1800E84859 /* Resources */,
+				000E8E01C0BBE650E72798F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +193,68 @@
 			files = (
 				EA9930A324D56A1900E84859 /* LaunchScreen.storyboard in Resources */,
 				EA9930A024D56A1900E84859 /* Assets.xcassets in Resources */,
-				EA99309E24D56A1800E84859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000E8E01C0BBE650E72798F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Click/Pods-Click-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Click/Pods-Click-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Click/Pods-Click-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C527B9D95B5C8C9EDD26BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Click-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA99308F24D56A1800E84859 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA99309B24D56A1800E84859 /* ViewController.swift in Sources */,
+				EA9930B624D5794C00E84859 /* CoinButton.swift in Sources */,
+				EA99309B24D56A1800E84859 /* MainScreenController.swift in Sources */,
 				EA99309724D56A1800E84859 /* AppDelegate.swift in Sources */,
-				EA99309924D56A1800E84859 /* SceneDelegate.swift in Sources */,
+				EA9930AB24D56E7700E84859 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA99309C24D56A1800E84859 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA99309D24D56A1800E84859 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA9930A124D56A1900E84859 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,11 +382,12 @@
 		};
 		EA9930A824D56A1900E84859 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20604A91229922D22F4D2E0 /* Pods-Click.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78U6FZ3GMX;
-				INFOPLIST_FILE = Click/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Click/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +401,12 @@
 		};
 		EA9930A924D56A1900E84859 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE0B520AC9A48A1519F6DA6 /* Pods-Click.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78U6FZ3GMX;
-				INFOPLIST_FILE = Click/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Click/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
