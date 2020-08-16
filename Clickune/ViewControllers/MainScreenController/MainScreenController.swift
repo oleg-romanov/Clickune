@@ -27,11 +27,14 @@ class MainScreenController: UIViewController {
     // MARK: - Action handlers
 
     private func addActionHandlers() {
-        customView.coinButton.addTarget(self, action: #selector(coinButtonClicked), for: .touchUpInside)
+        let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self, action: #selector(coinButtonClicked)
+        )
+        customView.addGestureRecognizer(tapRecognizer)
         customView.shopButton.addTarget(self, action: #selector(shopButtonClicked), for: .touchUpInside)
     }
 
-    @objc private func coinButtonClicked() {
+    @objc private func coinButtonClicked(recognizer: UITapGestureRecognizer) {
         customView.changeCountOfCoins()
         MainService.shared.updateScore(customView.countCoins) { result, error in
             if let error = error {

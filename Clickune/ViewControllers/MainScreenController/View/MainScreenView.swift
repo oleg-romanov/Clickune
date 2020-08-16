@@ -52,9 +52,9 @@ class MainScreenView: UIView {
         return label
     }()
 
-    lazy var coinButton: CoinButton = CoinButton()
-
     lazy var shopButton: ShopButton = ShopButton(title: "Shop")
+    
+    lazy var clickIndicator: ClickIndicator = ClickIndicator()
 
     // MARK: - Init
 
@@ -75,24 +75,26 @@ class MainScreenView: UIView {
 
     private func setupStyle() {
         backgroundColor = .blue
+        isUserInteractionEnabled = true
+        isMultipleTouchEnabled = true
     }
 
     private func addSubviews() {
+        addSubview(clickIndicator)
         addSubview(countCoinsLabel)
-        addSubview(coinButton)
         addSubview(shopButton)
         addSubview(offsetLabel)
     }
 
     private func makeConstraints() {
+        clickIndicator.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
         countCoinsLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().inset(90)
             make.width.equalToSuperview()
-        }
-
-        coinButton.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
         }
 
         shopButton.snp.makeConstraints { make in
@@ -109,6 +111,15 @@ class MainScreenView: UIView {
 
     func changeCountOfCoins() {
         countCoins += value
-        print(countCoins)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let tapOrigin = touch.location(in: self)
+            clickIndicator.clickHappend(tapOrigin)
+            print(tapOrigin)
+        }
+        print("\n")
+        super.touchesBegan(touches, with: event)
     }
 }
