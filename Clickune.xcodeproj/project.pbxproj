@@ -144,9 +144,9 @@
 		EA99309524D56A1800E84859 /* Clickune */ = {
 			isa = PBXGroup;
 			children = (
-				EA9930B024D5729600E84859 /* Common */,
 				EA9930AC24D570D300E84859 /* MainFiles */,
 				EA9930AD24D5717A00E84859 /* ViewControllers */,
+				EA9930B024D5729600E84859 /* Common */,
 				EA9930AF24D5724000E84859 /* Resources */,
 			);
 			path = Clickune;
