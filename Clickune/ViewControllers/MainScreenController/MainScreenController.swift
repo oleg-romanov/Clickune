@@ -27,11 +27,14 @@ class MainScreenController: UIViewController {
     // MARK: - Action handlers
 
     private func addActionHandlers() {
-        customView.coinButton.addTarget(self, action: #selector(coinButtonClicked), for: .touchUpInside)
+        let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self, action: #selector(coinButtonClicked)
+        )
+        customView.addGestureRecognizer(tapRecognizer)
         customView.shopButton.addTarget(self, action: #selector(shopButtonClicked), for: .touchUpInside)
     }
 
-    @objc private func coinButtonClicked() {
+    @objc private func coinButtonClicked(recognizer: UITapGestureRecognizer) {
         customView.changeCountOfCoins()
         MainService.shared.updateScore(customView.countCoins) { result, error in
             if let error = error {
@@ -45,11 +48,9 @@ class MainScreenController: UIViewController {
     }
 
     private func showShop() {
-        // AppDelegate.shared?.window?.rootViewController = ShopScreenController()
         let shopScreenController = ShopScreenController()
         let navigationController = UINavigationController(rootViewController: shopScreenController)
         shopScreenController.delegate = self
-        navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true)
     }
 
@@ -69,7 +70,7 @@ class MainScreenController: UIViewController {
             SPAlert.present(title: error.localizedDescription, message: nil, preset: .error)
             return
         }
-        customView.value = result ?? 0
+        customView.value = result ?? 1
     }
 }
 }

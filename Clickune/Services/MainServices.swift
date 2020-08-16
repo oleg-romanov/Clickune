@@ -38,7 +38,7 @@ class MainService: MainServiceProtocol {
         if let score: Int = UserDefaults.standard.value(forKey: "offset") as? Int {
             completion(score, nil)
         } else {
-            completion(0, nil)
+            completion(1, nil)
         }
     }
     
