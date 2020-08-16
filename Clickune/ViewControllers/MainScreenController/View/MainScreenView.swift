@@ -14,7 +14,15 @@ class MainScreenView: UIView {
 
     var countCoins: Int = 0 {
         didSet {
-            countCoinsLabel.text = String(countCoins)
+            UIView.transition(
+                with: countCoinsLabel, duration: 0.5,
+                options: .transitionFlipFromTop,
+                animations: { [weak self] in
+                    guard let self = self else { return }
+                    self.countCoinsLabel.text = String(self.countCoins)
+                },
+                completion: nil
+            )
         }
     }
 

@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // UserDefaults.standard.removeObject(forKey: "score")
+        // UserDefaults.standard.removeObject(forKey: "offset")
 
         window?.rootViewController = MainScreenController()
         // window?.rootViewController = NumbersController()
