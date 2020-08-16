@@ -42,7 +42,6 @@ extension ShopViewDataSourse: UITableViewDataSource {
         ) as? BoostCell
         let boost = data[indexPath.row]
         cell?.configure(boost: boost)
-        cell?.backgroundColor = .green
         return cell ?? UITableViewCell()
     }
 }

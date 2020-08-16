@@ -11,9 +11,12 @@ import Foundation
 protocol MainServiceProtocol {
     func getScore(completion: (Int?, Error?) -> Void)
     func updateScore(_ value: Int, completion: (Int?, Error?) -> Void)
+    func getOffset(completion: (Int?, Error?) -> Void)
+    func updateOffset(_ value: Int, completion: (Int?, Error?) -> Void)
 }
 
 class MainService: MainServiceProtocol {
+    
     static var shared: MainService = MainService()
     
     private init() {}
@@ -28,6 +31,19 @@ class MainService: MainServiceProtocol {
     
     func updateScore(_ value: Int, completion: (Int?, Error?) -> Void) {
         UserDefaults.standard.set(value, forKey: "score")
+        completion(value, nil)
+    }
+    
+    func getOffset(completion: (Int?, Error?) -> Void) {
+        if let score: Int = UserDefaults.standard.value(forKey: "offset") as? Int {
+            completion(score, nil)
+        } else {
+            completion(0, nil)
+        }
+    }
+    
+    func updateOffset(_ value: Int, completion: (Int?, Error?) -> Void) {
+        UserDefaults.standard.set(value, forKey: "offset")
         completion(value, nil)
     }
 }

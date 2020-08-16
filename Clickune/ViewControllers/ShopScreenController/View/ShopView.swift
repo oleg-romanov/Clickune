@@ -28,7 +28,7 @@ class ShopView: UIView {
     }()
 
     lazy var backFromShopButton: UIBarButtonItem = UIBarButtonItem(
-        title: "Back",
+        title: "Назад",
         style: .plain,
         target: nil,
         action: nil
@@ -43,7 +43,6 @@ class ShopView: UIView {
     }
 
     private func setupStyle() {
-        backgroundColor = .green
         dataSource.setTableView(tableView: tableView)
     }
 

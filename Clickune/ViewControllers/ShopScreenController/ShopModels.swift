@@ -73,8 +73,14 @@ struct Boost {
             boost: 200,
             cost: 80800
         )
+        
+        let cell11 = Boost(
+            title: "Представительский чаек",
+            boost: 200000,
+            cost: 10000000
+        )
 
         return [cell1, cell2, cell3, cell4, cell5,
-                cell6, cell7, cell8, cell9, cell10]
+                cell6, cell7, cell8, cell9, cell10, cell11]
     }
 }

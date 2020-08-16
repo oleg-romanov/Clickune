@@ -54,7 +54,7 @@ class MainScreenView: UIView {
 
     lazy var coinButton: CoinButton = CoinButton()
 
-    lazy var shopButton: ShopButton = ShopButton(title: "Shop")
+    lazy var shopButton: ShopButton = ShopButton(title: "Магазин")
 
     // MARK: - Init
 
@@ -101,10 +101,8 @@ class MainScreenView: UIView {
         }
 
         offsetLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(shopButton).inset(10)
-            make.trailing.equalToSuperview().inset(20)
-            make.leading.equalTo(shopButton.snp.trailing).offset(25)
-        }
+            make.top.equalTo(safeAreaLayoutGuide).inset(16)
+            make.centerX.equalToSuperview()        }
     }
 
     func changeCountOfCoins() {

@@ -63,17 +63,32 @@ class MainScreenController: UIViewController {
             }
             customView.countCoins = result ?? 0
         }
+        
+        MainService.shared.getOffset { result, error in
+        if let error = error {
+            SPAlert.present(title: error.localizedDescription, message: nil, preset: .error)
+            return
+        }
+        customView.value = result ?? 0
     }
+}
 }
 
 extension MainScreenController: ShopScreenControllerDelegate {
     func appendBoost(boost: Boost) {
         if customView.countCoins >= boost.cost {
             customView.countCoins -= boost.cost
-            SPAlert.present(title: "Success", message: "Boost updated", preset: .done)
+            SPAlert.present(title: "Успех", message: "Буст увеличен", preset: .done)
             customView.value += boost.boost
+            MainService.shared.updateOffset(customView.value) {result, error in
+                if let error = error {
+                    SPAlert.present(title: error.localizedDescription, message: nil, preset: .error)
+                    return
+                }
+                customView.value = result ?? 0
+            }
         } else {
-            SPAlert.present(title: "Fail", message: "Sorry Honey, no money...", preset: .error)
+            SPAlert.present(title: "Ошибка", message: "Подкопи деньжат, пупсик", preset: .error)
         }
     }
 }

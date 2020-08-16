@@ -28,7 +28,7 @@ class ShopScreenController: UIViewController {
 
     private func setupStyle() {
         navigationItem.leftBarButtonItem = customView.backFromShopButton
-        navigationItem.title = "Shop"
+        navigationItem.title = "Магазин"
         customView.updateData(Boost.generateCells())
     }
 
