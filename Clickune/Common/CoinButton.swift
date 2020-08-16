@@ -13,12 +13,10 @@ class CoinButton: UIButton {
         super.init(frame: .zero)
         setupStyle()
     }
-    
-    required init?(coder: NSCoder) {
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func setupStyle() {
-        
-    }
+
+    private func setupStyle() {}
 }

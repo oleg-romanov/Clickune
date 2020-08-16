@@ -13,32 +13,31 @@ protocol ShopScreenControllerDelegate: AnyObject {
 }
 
 class ShopScreenController: UIViewController {
-    
     lazy var customView: ShopView = ShopView()
-    
+
     weak var delegate: ShopScreenControllerDelegate?
-    
+
     override func loadView() {
         view = customView
     }
-    
+
     override func viewDidLoad() {
         setupStyle()
         addActionHandlers()
     }
-    
+
     private func setupStyle() {
         navigationItem.leftBarButtonItem = customView.backFromShopButton
         navigationItem.title = "Shop"
         customView.updateData(Boost.generateCells())
     }
-    
+
     private func addActionHandlers() {
         customView.backFromShopButton.target = self
         customView.backFromShopButton.action = #selector(backFromShopButtonClicked)
         customView.dataSource.delegate = self
     }
-    
+
     @objc private func backFromShopButtonClicked() {
         // AppDelegate.shared?.window?.rootViewController = MainScreenController()
         dismiss(animated: true, completion: nil)
