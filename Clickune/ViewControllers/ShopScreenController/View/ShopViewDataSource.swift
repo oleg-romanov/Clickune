@@ -16,12 +16,12 @@ class ShopViewDataSourse: NSObject {
     var data: [Boost] = []
     var tableView: UITableView?
     weak var delegate: ShopViewDataSourceDelegate?
-    
-    func updateData(_ data : [Boost]) {
+
+    func updateData(_ data: [Boost]) {
         self.data = data
         tableView?.reloadData()
     }
-    
+
     func setTableView(tableView: UITableView) {
         self.tableView = tableView
         tableView.register(BoostCell.self, forCellReuseIdentifier: "BoostCell")
@@ -31,10 +31,10 @@ class ShopViewDataSourse: NSObject {
 }
 
 extension ShopViewDataSourse: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return data.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "BoostCell",
@@ -42,8 +42,8 @@ extension ShopViewDataSourse: UITableViewDataSource {
         ) as? BoostCell
         let boost = data[indexPath.row]
         cell?.configure(boost: boost)
-       return cell ?? UITableViewCell()
-        
+        cell?.backgroundColor = .green
+        return cell ?? UITableViewCell()
     }
 }
 
@@ -54,6 +54,3 @@ extension ShopViewDataSourse: UITableViewDelegate {
         delegate?.boostSelected(boost: boost)
     }
 }
-
-
-

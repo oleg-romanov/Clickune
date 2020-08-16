@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DCC6FFA38FA8469E8C76276 /* Pods_Clickune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403355E65F2E047A4F3FA7B3 /* Pods_Clickune.framework */; };
+		EA0E378424E97A2500C4F639 /* MainServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E378324E97A2500C4F639 /* MainServices.swift */; };
 		EA3124F224E6C18D002901C0 /* ShopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3124F124E6C18D002901C0 /* ShopButton.swift */; };
 		EA3124F524E6C684002901C0 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3124F424E6C684002901C0 /* ShopView.swift */; };
 		EA3124F824E6C92C002901C0 /* ShopScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3124F724E6C92C002901C0 /* ShopScreenController.swift */; };
@@ -30,6 +31,7 @@
 		5EE0B520AC9A48A1519F6DA6 /* Pods-Click.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Click.release.xcconfig"; path = "Target Support Files/Pods-Click/Pods-Click.release.xcconfig"; sourceTree = "<group>"; };
 		7F4FB7D9F3833EAC94F40B68 /* Pods-Clickune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickune.release.xcconfig"; path = "Target Support Files/Pods-Clickune/Pods-Clickune.release.xcconfig"; sourceTree = "<group>"; };
 		C20604A91229922D22F4D2E0 /* Pods-Click.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Click.debug.xcconfig"; path = "Target Support Files/Pods-Click/Pods-Click.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0E378324E97A2500C4F639 /* MainServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServices.swift; sourceTree = "<group>"; };
 		EA3124F124E6C18D002901C0 /* ShopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopButton.swift; sourceTree = "<group>"; };
 		EA3124F424E6C684002901C0 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		EA3124F724E6C92C002901C0 /* ShopScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScreenController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 				7F4FB7D9F3833EAC94F40B68 /* Pods-Clickune.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA0E378224E979F700C4F639 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA0E378324E97A2500C4F639 /* MainServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		EA3124F324E6C66C002901C0 /* View */ = {
@@ -147,6 +157,7 @@
 				EA9930AC24D570D300E84859 /* MainFiles */,
 				EA9930AD24D5717A00E84859 /* ViewControllers */,
 				EA9930B024D5729600E84859 /* Common */,
+				EA0E378224E979F700C4F639 /* Services */,
 				EA9930AF24D5724000E84859 /* Resources */,
 			);
 			path = Clickune;
@@ -320,6 +331,7 @@
 				EA99309724D56A1800E84859 /* AppDelegate.swift in Sources */,
 				EA8F06D524E6D243005B4AFA /* ShopViewDataSource.swift in Sources */,
 				EA3124FA24E6CBC3002901C0 /* BackFromShopButton.swift in Sources */,
+				EA0E378424E97A2500C4F639 /* MainServices.swift in Sources */,
 				EA9930AB24D56E7700E84859 /* MainScreenView.swift in Sources */,
 				EA8F06DA24E6D591005B4AFA /* ShopModels.swift in Sources */,
 				EA8F06D824E6D2BC005B4AFA /* BoostCell.swift in Sources */,

@@ -6,13 +6,12 @@
 //  Copyright © 2020 Oleg Romanov. All rights reserved.
 //
 
-import UIKit
 import SPAlert
+import UIKit
 
 class MainScreenController: UIViewController {
-    
     lazy var customView: MainScreenView = MainScreenView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         addActionHandlers()
@@ -20,28 +19,31 @@ class MainScreenController: UIViewController {
         customView.onceDisplayCountCoins()
         customView.onceDisplayValue()
     }
-    
+
     override func loadView() {
         view = customView
     }
-    
+
     // MARK: - Action handlers
-    
+
     private func addActionHandlers() {
         customView.coinButton.addTarget(self, action: #selector(coinButtonClicked), for: .touchUpInside)
         customView.shopButton.addTarget(self, action: #selector(shopButtonClicked), for: .touchUpInside)
     }
-    
+
     @objc private func coinButtonClicked() {
         customView.changeCountOfCoins()
-     //   UserDefaults.standard.set(customView.getScore(), forKey: "score")
+        MainService.shared.updateScore(customView.countCoins) { result, error in
+            if let error = error {
+                SPAlert.present(title: error.localizedDescription, message: nil, preset: .error)
+            }
+        }
     }
-    
+
     @objc private func shopButtonClicked() {
         showShop()
-       
     }
-    
+
     private func showShop() {
         // AppDelegate.shared?.window?.rootViewController = ShopScreenController()
         let shopScreenController = ShopScreenController()
@@ -50,12 +52,16 @@ class MainScreenController: UIViewController {
         navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true)
     }
-    
+
     // MARK: - Private methods
-    
+
     private func loadScore() {
-        if let score: Int = UserDefaults.standard.value(forKey: "score") as? Int {
-            customView.countCoins = score
+        MainService.shared.getScore { result, error in
+            if let error = error {
+                SPAlert.present(title: error.localizedDescription, message: nil, preset: .error)
+                return
+            }
+            customView.countCoins = result ?? 0
         }
     }
 }
@@ -69,7 +75,5 @@ extension MainScreenController: ShopScreenControllerDelegate {
         } else {
             SPAlert.present(title: "Fail", message: "Sorry Honey, no money...", preset: .error)
         }
-        
     }
 }
-

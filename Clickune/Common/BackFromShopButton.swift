@@ -13,12 +13,12 @@ class BackFromShopButton: UIButton {
         super.init(frame: .zero)
         setupStyle(title: title)
     }
-    
-    required init?(coder: NSCoder) {
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func setupStyle(title : String) {
+
+    private func setupStyle(title: String) {
         setTitle(title, for: .normal)
     }
 }
