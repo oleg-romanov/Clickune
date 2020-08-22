@@ -1,0 +1,16 @@
+xcassets:
+  inputs:
+    - Clickune/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: Clickune/Common/Generated/Assets.swift
+      params:
+          enumName: Assets
+
+strings:
+  inputs: Clickune/Resources/ru.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: Clickune/Common/Generated/Text.swift
+      params:
+          enumName: Text

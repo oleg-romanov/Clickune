@@ -44,7 +44,7 @@ class MainScreenView: UIView {
 
     private var offsetLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
+        label.textColor = Assets.textColor.color
         label.textAlignment = .center
         label.font = .italicSystemFont(ofSize: 30)
         label.adjustsFontSizeToFitWidth = true
@@ -52,7 +52,7 @@ class MainScreenView: UIView {
         return label
     }()
 
-    lazy var shopButton: ShopButton = ShopButton(title: "Магазин")
+    lazy var shopButton: ShopButton = ShopButton(title: Text.MainPage.shop)
 
     lazy var clickIndicator: ClickIndicator = ClickIndicator()
 
@@ -74,7 +74,7 @@ class MainScreenView: UIView {
     }
 
     private func setupStyle() {
-        backgroundColor = .blue
+        backgroundColor = Assets.background.color
         isUserInteractionEnabled = true
         isMultipleTouchEnabled = true
     }

@@ -17,67 +17,67 @@ struct Boost {
         let cell1 = Boost(
             title: "Микроскопический буст",
             boost: 1,
-            cost: 10
+            cost: 30
         )
 
         let cell2 = Boost(
             title: "Миллископический буст",
             boost: 2,
-            cost: 40
+            cost: 90
         )
 
         let cell3 = Boost(
             title: "Мелкий буст",
             boost: 3,
-            cost: 80
+            cost: 280
         )
 
         let cell4 = Boost(
             title: "Нормальный такой буст",
             boost: 4,
-            cost: 150
+            cost: 1050
         )
 
         let cell5 = Boost(
             title: "Крутой буст",
             boost: 7,
-            cost: 450
+            cost: 5450
         )
 
         let cell6 = Boost(
             title: "Топовый буст",
             boost: 12,
-            cost: 600
+            cost: 9600
         )
 
         let cell7 = Boost(
             title: "Нереальный буст",
             boost: 20,
-            cost: 1800
+            cost: 28000
         )
 
         let cell8 = Boost(
             title: "Ультра буст",
             boost: 30,
-            cost: 3800
+            cost: 198000
         )
 
         let cell9 = Boost(
             title: "Крутой Ультра буст",
-            boost: 55,
-            cost: 7800
+            boost: 85,
+            cost: 780000
         )
 
         let cell10 = Boost(
             title: "Горчичка",
             boost: 200,
-            cost: 80800
+            cost: 5000000
         )
         
         let cell11 = Boost(
             title: "Представительский чаек",
             boost: 200000,
-            cost: 10000000
+            cost: 1000000000
         )
 
         return [cell1, cell2, cell3, cell4, cell5,

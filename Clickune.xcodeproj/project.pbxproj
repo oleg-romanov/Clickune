@@ -18,12 +18,17 @@
 		EA8F06D524E6D243005B4AFA /* ShopViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8F06D424E6D243005B4AFA /* ShopViewDataSource.swift */; };
 		EA8F06D824E6D2BC005B4AFA /* BoostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8F06D724E6D2BC005B4AFA /* BoostCell.swift */; };
 		EA8F06DA24E6D591005B4AFA /* ShopModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8F06D924E6D591005B4AFA /* ShopModels.swift */; };
+		EA944BA624F13C870099DA32 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA944BA524F13C870099DA32 /* Assets.swift */; };
+		EA944BA924F13DA70099DA32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA944BAB24F13DA70099DA32 /* Localizable.strings */; };
+		EA944BAF24F13E910099DA32 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA944BAE24F13E910099DA32 /* Text.swift */; };
+		EA944BB124F140B10099DA32 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EA944BB024F140B10099DA32 /* README.md */; };
 		EA99309724D56A1800E84859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309624D56A1800E84859 /* AppDelegate.swift */; };
 		EA99309B24D56A1800E84859 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99309A24D56A1800E84859 /* MainScreenController.swift */; };
 		EA9930A024D56A1900E84859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99309F24D56A1900E84859 /* Assets.xcassets */; };
 		EA9930A324D56A1900E84859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9930A124D56A1900E84859 /* LaunchScreen.storyboard */; };
 		EA9930AB24D56E7700E84859 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9930AA24D56E7700E84859 /* MainScreenView.swift */; };
 		EA9930B624D5794C00E84859 /* CoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9930B524D5794C00E84859 /* CoinButton.swift */; };
+		EA9CB58524EC367F00DB2871 /* DateSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CB58424EC367F00DB2871 /* DateSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,12 @@
 		EA8F06D424E6D243005B4AFA /* ShopViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewDataSource.swift; sourceTree = "<group>"; };
 		EA8F06D724E6D2BC005B4AFA /* BoostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostCell.swift; sourceTree = "<group>"; };
 		EA8F06D924E6D591005B4AFA /* ShopModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModels.swift; sourceTree = "<group>"; };
+		EA944BA524F13C870099DA32 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EA944BAA24F13DA70099DA32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA944BAC24F13DBF0099DA32 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EA944BAD24F13DBF0099DA32 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA944BAE24F13E910099DA32 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		EA944BB024F140B10099DA32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EA99309324D56A1800E84859 /* Clickune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clickune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA99309624D56A1800E84859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA99309A24D56A1800E84859 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
@@ -50,6 +61,7 @@
 		EA9930A424D56A1900E84859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9930AA24D56E7700E84859 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		EA9930B524D5794C00E84859 /* CoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinButton.swift; sourceTree = "<group>"; };
+		EA9CB58424EC367F00DB2871 /* DateSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				EA83F7C724E2CB6400BBB608 /* NumbersController.swift */,
+				EA9CB58324EC364E00DB2871 /* DateSectionHeader */,
 			);
 			path = NumbersController;
 			sourceTree = "<group>";
@@ -136,9 +149,19 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EA944BA424F13C5E0099DA32 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EA944BAE24F13E910099DA32 /* Text.swift */,
+				EA944BA524F13C870099DA32 /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		EA99308A24D56A1800E84859 = {
 			isa = PBXGroup;
 			children = (
+				EA944BB024F140B10099DA32 /* README.md */,
 				EA99309524D56A1800E84859 /* Clickune */,
 				EA99309424D56A1800E84859 /* Products */,
 				6798E59B187A3FB0C438757C /* Pods */,
@@ -199,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				EA99309F24D56A1900E84859 /* Assets.xcassets */,
+				EA944BAB24F13DA70099DA32 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -206,11 +230,20 @@
 		EA9930B024D5729600E84859 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EA944BA424F13C5E0099DA32 /* Generated */,
 				EA9930B524D5794C00E84859 /* CoinButton.swift */,
 				EA3124F124E6C18D002901C0 /* ShopButton.swift */,
 				EA3124F924E6CBC3002901C0 /* BackFromShopButton.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		EA9CB58324EC364E00DB2871 /* DateSectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				EA9CB58424EC367F00DB2871 /* DateSectionHeader.swift */,
+			);
+			path = DateSectionHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +290,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EA99308A24D56A1800E84859;
 			productRefGroup = EA99309424D56A1800E84859 /* Products */;
@@ -274,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9930A324D56A1900E84859 /* LaunchScreen.storyboard in Resources */,
+				EA944BA924F13DA70099DA32 /* Localizable.strings in Resources */,
+				EA944BB124F140B10099DA32 /* README.md in Resources */,
 				EA9930A024D56A1900E84859 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,20 +373,33 @@
 				EA3124FA24E6CBC3002901C0 /* BackFromShopButton.swift in Sources */,
 				EA0E378424E97A2500C4F639 /* MainServices.swift in Sources */,
 				EA9930AB24D56E7700E84859 /* MainScreenView.swift in Sources */,
+				EA944BA624F13C870099DA32 /* Assets.swift in Sources */,
+				EA944BAF24F13E910099DA32 /* Text.swift in Sources */,
 				EA8F06DA24E6D591005B4AFA /* ShopModels.swift in Sources */,
 				EA8F06D824E6D2BC005B4AFA /* BoostCell.swift in Sources */,
 				EA83F7C824E2CB6400BBB608 /* NumbersController.swift in Sources */,
 				EA3124F224E6C18D002901C0 /* ShopButton.swift in Sources */,
+				EA9CB58524EC367F00DB2871 /* DateSectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EA944BAB24F13DA70099DA32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA944BAA24F13DA70099DA32 /* en */,
+				EA944BAD24F13DBF0099DA32 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EA9930A124D56A1900E84859 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EA9930A224D56A1900E84859 /* Base */,
+				EA944BAC24F13DBF0099DA32 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -362,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -422,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
